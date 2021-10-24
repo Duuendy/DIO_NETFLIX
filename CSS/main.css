@@ -3,6 +3,7 @@
     --preto:#141414;
     --azul:#480af1;
     --verde:#0af10a;
+    --amarelo:#faf600;
 }
 
 *{
@@ -13,24 +14,102 @@
 body{
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    
 }
 
 header .container{
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 
 header .logo{
+    
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
     font-size: 40px;
 }
 
-header nav a{
+header .console a{
     text-decoration: none;
     color: #AAA;
-    margin-right: 10px;
+    margin-right: 10px; 
+    height: 100%;   
 }
 
-header nav a:hover{
-    color: #fff;
+#PS:hover{
+    color: var(--azul);
+}    
+#XB:hover{
+    color: var(--verde);
+}
+#NIN:hover{
+    color: var(--vermelho);
+}
+#PC:hover{
+    color: var(--amarelo);
+}
+
+.jogo-principal{
+    color: black;
+    font-size: 16px;
+    background:  url(../IMG/fortnite-capa3.jpg);
+    background-size: cover; 
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: flex-start;
+}
+
+.jogo-principal .descricao{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.titulo{
+    font-size: 40px;
+}
+
+.botoes{
+    margin-top: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.botao{
+    background-color: rgba(0,0,0,50%);
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.botao:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.botao i{
+    margin-right: 7px;
+}
+
+.container{
+    margin-left: 15px;
+}
+
+.item{
+    height: 100%;
+}
+
+.box-jogos{
+    height: 100%;
+    width: 100%;
 }
